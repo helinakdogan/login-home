@@ -13,6 +13,7 @@ const Login = (props) => {
 
   useEffect(() => {
     const identifier = setTimeout(() => {
+      
       console.log('VALIDITY CHECK');
       setFormIsValid(
         enteredEmail.includes('@') && enteredPassword.trim().length > 6
