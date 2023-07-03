@@ -5,7 +5,9 @@ import classes from "./Login.module.css";
 import Button from "../UI/Button/Button";
 
 const emailReducer = (state, action) => {
-  
+  if(action.type === 'USER_INPUT') {
+    return { value: action.val, isValid: action.val.includes('@')};
+  }
 }
 
 const Login = (props) => {
