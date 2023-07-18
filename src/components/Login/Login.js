@@ -84,6 +84,7 @@ const Login = (props) => {
     dispatchPassword({ type: "INPUT_BLUR" });
   };
 
+  // submitting form
   const submitHandler = (event) => {
     event.preventDefault();
     props.onLogin(emailState.value, passwordState.value);
@@ -131,3 +132,40 @@ const Login = (props) => {
 };
 
 export default Login;
+
+/*
+react state nedir, state ve set state kullanımına örnek
+
+
+reat hook form 
+formik 
+
+
+
+formlarda validasyonlar
+ ör : zorunlu mu slsn
+
+
+
+
+ formda istediğimiz bilgiler: 
+
+  PersonelAd : String
+  PersonelSoyad : String
+  DogumTarih: Date
+  Cinsiyet : String, select 
+  AsilPersonelMi : bool 
+  Email : email ?
+  ProjeAd : String ?
+  CalistigiOfis : String ?
+  Unvan: String ?
+  Telefon :  +90 (555) 444 33 22
+  Sifre : password hidden
+  SifreTekrar: password hidden
+
+
+  Kaydet 
+  
+  */
+
+
